@@ -1,0 +1,75 @@
+/* Basic styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(157, 236, 198); 
+    display: flex; /* bich me dikhega todo box*/
+    justify-content: center; /* iske bina todo box ka height lmba hojata*/
+    align-items: center; /* isse todo wla box center me jata h otherwise left side ajata hai*/
+    height: 100vh;
+  }
+  
+  /* Styling for the to-do list container */
+  .todo-container {
+    background: rgb(114, 195, 245);
+    padding: 30px 47px 40px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(1, 34, 18, 0.887);
+    width: 300px;
+    text-align: center;
+  }
+  
+  /* Input box styling */
+  #taskInput {
+    width: 100%;
+    padding: 10px 5px 10px 20px;
+    margin-bottom: 12px; /* text box and button k bich ka distance*/
+    border: 1px solid #d8cbcb;
+    border-radius: 40px;
+  }
+  
+  /* Add button styling */
+  #addTaskButton {
+    padding: 10px 15px;
+    background-color: #031217a1;
+    color: rgb(230, 231, 241);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  
+  #addTaskButton:hover {
+    background-color: #d1d4d6;
+  }
+  
+  /* Styling for each task in the list */
+  #taskList li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Delete button for tasks */
+  .delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #cc0000;
+  }
+
+  
+
+  /* Style for completed tasks */
+#taskList li.completed {
+  text-decoration:wavy; /* Strike-through text for completed tasks */
+  color: gray; /* Dim the text color to indicate completion */
+  font-style: italic; /* Optional: Add an italic style for better distinction */
+}
